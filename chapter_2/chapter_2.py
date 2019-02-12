@@ -58,3 +58,9 @@ print(order_of_operations_1)
 
 order_of_operations_2 = (2 + 3)* 2
 print(order_of_operations_2)
+
+float_variable = 0.3 + 0.4
+print(float_variable)
+
+age = 19
+print('He was ' + str(age) + ' years old')
