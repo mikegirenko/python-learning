@@ -1,3 +1,7 @@
+"""
+Working with variables
+"""
+
 message = 'Hello Python World!'
 print(message)
 
