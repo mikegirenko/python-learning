@@ -4,6 +4,7 @@ print('Greeting ' + guests_list[0].title() + '!')
 print('Greeting ' + guests_list[1].title() + '!')
 print('Greeting ' + guests_list[2].title() + '!')
 print('Greeting ' + guests_list[3].title() + '!')
+print('Tolal number of guests is ' + str(len(guests_list)))
 
 guest_cannot_come = 'mike'
 print('\n' + guest_cannot_come.title() + ' cannot come to the dinner')

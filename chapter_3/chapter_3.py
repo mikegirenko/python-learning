@@ -34,3 +34,14 @@ item_to_remove = 'suzuki'
 motorcycles.remove(item_to_remove)
 print('List after ' + item_to_remove + ' was removed', motorcycles)
 print('Removed item is ' + item_to_remove)
+
+cars = ['jeep', 'ford', 'buick', 'tesla']
+print('Original list is', cars)
+cars.sort()
+print('Sorted list is', cars)
+
+cars = ['jeep', 'ford', 'buick', 'tesla']
+print('Original list is', cars)
+print('Temporarily sorted list is', sorted(cars))
+print('Original list is', cars)
+print('This list has ' + str(len(cars)) + ' cars')

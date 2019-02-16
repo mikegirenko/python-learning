@@ -1,0 +1,16 @@
+places_to_visit = ['Brasil', 'Romania', 'Italy', 'Peru', 'Iceland']
+print('Original list', places_to_visit)
+print('Sorted list', sorted(places_to_visit))
+print('Original list', places_to_visit)
+print('Sorted in reverse order list', sorted(places_to_visit, reverse=True))
+print('Original list', places_to_visit)
+places_to_visit.reverse()
+print('Sorted in reverse order list', places_to_visit)
+places_to_visit.reverse()
+print('Sorted list', places_to_visit)
+places_to_visit = ['Brasil', 'Romania', 'Italy', 'Peru', 'Iceland']
+print('Original list', places_to_visit)
+places_to_visit.sort()
+print('Sorted list', places_to_visit)
+places_to_visit.sort(reverse=True)
+print('Sorted in reverse order list', places_to_visit)
