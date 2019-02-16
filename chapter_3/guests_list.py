@@ -14,7 +14,7 @@ print('My guests list after ' + guest_cannot_come.title()
 new_guest = 'steve'
 guests_list.insert(2, new_guest)
 print('\nMy latest guests list after ' + new_guest.title()
-      + ' was addedis ' + str(guests_list))
+      + ' was added is ' + str(guests_list))
 
 print('\nI found a much bigger diner table')
 list_of_new_guests = ['jeana', 'paul', 'abby']
@@ -24,3 +24,31 @@ guests_list.insert(2, list_of_new_guests[1])
 guests_list.append(list_of_new_guests[2])
 for name in guests_list:
     print('Greeting ' + name.title() + '!')
+print('My current guests list is', guests_list)
+
+print('\nI can only invite 2 guests')
+
+popped_guest = guests_list.pop(0)
+print('Sorry ' + popped_guest.title() + ' I cannot invite you')
+
+popped_guest = guests_list.pop(0)
+print('Sorry ' + popped_guest.title() + ' I cannot invite you')
+
+popped_guest = guests_list.pop(0)
+print('Sorry ' + popped_guest.title() + ' I cannot invite you')
+
+popped_guest = guests_list.pop(0)
+print('Sorry ' + popped_guest.title() + ' I cannot invite you')
+
+popped_guest = guests_list.pop(0)
+print('Sorry ' + popped_guest.title() + ' I cannot invite you')
+
+for name in guests_list:
+    print(name.title() + ' you are still invited')
+
+print('Current list is', guests_list)
+
+del guests_list[0]
+del guests_list[0]
+
+print('My list at the end is', guests_list)
