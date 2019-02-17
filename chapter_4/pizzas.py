@@ -1,4 +1,4 @@
-my_favorite_pizzas = ['pepperoni', 'double chesse', 'chicken']
+my_favorite_pizzas = ['pepperoni', 'double cheese', 'chicken']
 
 for pizza in my_favorite_pizzas:
     print(pizza)
