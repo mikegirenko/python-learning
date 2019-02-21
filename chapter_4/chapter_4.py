@@ -1,5 +1,5 @@
 """
-More working with lists
+More working with lists. Working with tuple
 """
 
 food = ['spam', 'eggs', 'chees']
@@ -23,3 +23,16 @@ food.append('bacon')
 my_friend_foods.append('ice cream')
 print('My latest favorite foods are', food)
 print("My latest friend's favorite foods are", my_friend_foods)
+
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+# dimensions[0] = 231
+
+for dimension in dimensions:
+    print('Original tuple', dimension)
+
+dimensions = (187, 3)
+
+for dimension in dimensions:
+    print('Updated tuple', dimension)
