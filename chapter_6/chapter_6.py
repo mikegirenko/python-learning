@@ -41,7 +41,8 @@ print('\nUpdated alien_3 ' + str(alien_3))
 favorite_languages = {
     'jen': 'python',
     'mike': 'java',
-    'tom': 'c'
+    'tom': 'c',
+    'bill': 'python'
 }
 print('\nJens favorite language is ' + favorite_languages['jen'].title())
 
@@ -58,3 +59,31 @@ for key, value in user_0.items():
 for k, v in user_0.items():
     print('\n\tKey: ' + k)
     print('\tValue: ' + v)
+
+for name in favorite_languages.keys():
+    print(name.title())
+
+# The same as above
+for name in favorite_languages:
+    print('\t', name.title())
+
+names = ['jen', 'mike']
+for name in favorite_languages:
+    print(name.title())
+    if name in names:
+        print('\tHi ' + name.title() + ' I see your favorite language is ' +
+              favorite_languages[name].title() + '!')
+
+if 'erin' not in favorite_languages.keys():
+    print('\nHi Erin, what is your favorite language?')
+
+for name in sorted(favorite_languages.keys()):
+    print('\t', name.title() + ', thank you for answering!')
+
+print('\nThe following languages were mentioned:')
+for language in favorite_languages.values():
+    print(language.title())
+
+print('\nThe following unique languages were mentioned:')
+for language in set(favorite_languages.values()):
+    print(language.title())
