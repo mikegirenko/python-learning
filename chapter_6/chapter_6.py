@@ -116,3 +116,6 @@ for alien in aliens_list[:3]:
         alien['color'] = 'green'
 for alien in aliens_list[:5]:
     print('\t', alien)
+
+pizza = {'crust': 'regular', 'topping': ['cheese', 'pepperoni']}
+print(pizza)
