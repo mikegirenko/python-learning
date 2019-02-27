@@ -87,3 +87,32 @@ for language in favorite_languages.values():
 print('\nThe following unique languages were mentioned:')
 for language in set(favorite_languages.values()):
     print(language.title())
+
+alien_4 = {'color': 'green', 'points': 5}
+alien_5 = {'color': 'red', 'points': 15}
+alien_6 = {'color': 'yellow', 'points': 10}
+
+aliens = [alien_4, alien_5, alien_6]
+print('\nThe list of aliens:')
+for alien in aliens:
+    print('\t', alien)
+
+aliens_list = []
+print('\nThese are first three auto-generated aliens:')
+for number in range(7):
+    one_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens_list.append(one_alien)
+for alien in aliens_list[:3]:
+    print('\t', alien)
+print('There are ' + str(len(aliens_list)) + ' aliens on the list')
+
+aliens_list = []
+for number in range(30):
+    new_alien = {'color': 'red', 'points': 7, 'speed': 'slow'}
+    aliens_list.append(new_alien)
+print('\nThe first three aliens have updated color:')
+for alien in aliens_list[:3]:
+    if alien['color'] == 'red':
+        alien['color'] = 'green'
+for alien in aliens_list[:5]:
+    print('\t', alien)
