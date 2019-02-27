@@ -118,5 +118,17 @@ for alien in aliens_list[:5]:
     print('\t', alien)
 
 pizza = {'crust': 'regular', 'topping': ['cheese', 'pepperoni']}
-print(pizza)
+print('This pizza has ' + pizza['crust'] + ' crust and following toppings:')
+for topping in pizza['topping']:
+    print('\t', topping)
 
+makes_and_models = {
+    'toyota': ['camry', 'rav4', '4runner'],
+    'honda': ['accord', 'civic'],
+    'ford': ['150', 'taurus', 'edge', 'explorere']
+}
+print('\n' + 'Automakers and their cars:')
+for key, value in makes_and_models.items():
+    print('\t' + key.title() + ' makes the below models:')
+    for v in value:
+        print('\t\t', v)
