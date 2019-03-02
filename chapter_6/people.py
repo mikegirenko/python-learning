@@ -26,5 +26,9 @@ person_3 = {
 }
 
 list_of_people = [person_1, person_2, person_3]
-for p in list_of_people:
-    print(p)
+
+print('There are ' + str(len(list_of_people)) + ' on the list. They are:')
+for person in list_of_people:
+    for k, v in person.items():
+        print(str(k) + ' : ' + str(v))
+    print(" ")
