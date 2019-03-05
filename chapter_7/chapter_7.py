@@ -57,3 +57,35 @@ while current_number < end:
     if current_number % 2 == 0:
         continue
     print(current_number, 'is odd number below', end)
+
+unconfirmed_users = ['mike', 'jim', 'julie']
+confirmed_users = []
+
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print('\tConfirming: ' + current_user.title())
+    confirmed_users.append(current_user)
+
+print('\nThe following users have been confirmed:')
+for user in confirmed_users:
+    print('\t' + user.title())
+
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+while 'cat' in pets:
+    pets.remove('cat')
+print('\nHere is updated list without "cat"', pets)
+
+responses = {}
+polling_active = True
+while polling_active:
+    name = input('\nEnter name: ')
+    pet = input('\nEnter per: ')
+    responses[name] = pet
+
+    keep_polling = input('\nDo you want to continue? yes/no: ')
+    if keep_polling == 'no':
+        polling_active = False
+print('\nPolling complete, results below:')
+for name, pet in responses.items():
+    print('\t' + name.title() + "'s favorite pet is " + pet)
