@@ -99,3 +99,26 @@ def completed_models(completed):
 
 print_models(unprinted_designs, completed_designs)
 completed_models(completed_designs)
+
+
+def pizza_toppings(*topping):
+        print(topping)
+
+
+pizza_toppings('pepperoni')
+pizza_toppings('pepperoni', 'ham', 'cheese')
+
+
+def build_profile(first, last, **user_info):
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for k, v in user_info.items():
+        profile[k] = v
+    return profile
+
+
+user_profile = build_profile('albert', 'einstein',
+                             location='princeton',
+                             field='physics')
+print(user_profile)
