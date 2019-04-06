@@ -43,3 +43,17 @@ print('We served', restaurant.number_served, 'customers')
 
 restaurant.increment_number_served(100)
 print('After today we served', restaurant.number_served, 'customers')
+
+
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ['vanilla', 'plain']
+
+    def display_flavors(self):
+        for flavor in self.flavors:
+            print(flavor.title())
+
+
+ice_cream_restaurant = IceCreamStand('Little man', 'ice cream')
+ice_cream_restaurant.display_flavors()
