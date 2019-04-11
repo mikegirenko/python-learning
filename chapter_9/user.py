@@ -40,7 +40,7 @@ print('After reset, user attempted to login ', user_3.login_attempts, 'times')
 class Privileges():
 
     def __init__(self):
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        self.privileges = ["can add post", "can delete post", "can ban user"]
 
     def show_privileges(self):
         print('Admin has the below privileges:')
@@ -49,11 +49,10 @@ class Privileges():
 
 
 class Admin(User):
-
     def __init__(self, first_name, last_name, age, city):
         super().__init__(first_name, last_name, age, city)
         self.privileges = Privileges()
 
 
-admin_1 = Admin('pat', 'simms', '29', 'Laguna Beach')
-print(admin_1.privileges.show_privileges())
+admin_1 = Admin('jimmy', 'buffet', 23, 'Denver')
+admin_1.privileges.show_privileges()
