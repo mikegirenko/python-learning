@@ -1,0 +1,3 @@
+In Python you can store values in variables
+In Python you can create functions which can perform a task
+In Python you can manipulate files
