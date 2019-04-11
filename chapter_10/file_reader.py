@@ -24,5 +24,5 @@ with open(file) as file_object:
     lines = file_object.readlines()
     for line in lines:
         string += line
-string.replace('Python', 'C')
-print(string)
+new_string = string.replace('Python', 'C')
+print(new_string)
