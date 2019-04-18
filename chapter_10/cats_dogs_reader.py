@@ -6,7 +6,8 @@ def file_reader(filename):
         with open(filename) as file_object:
             contents = file_object.read()
     except FileNotFoundError:
-        print(filename, 'does not exists')
+        pass
+        # print(filename, 'does not exists')
     else:
         print(contents)
 
