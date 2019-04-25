@@ -1,3 +1,3 @@
 # python-learning
 
-"Python crash course" by Eric Matthes
+"Python Crash Course: A Hands-On, Project-Based Introduction to Programming" by Eric Matthes
