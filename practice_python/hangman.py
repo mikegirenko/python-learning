@@ -49,4 +49,3 @@ class Hangman:
 if __name__ == '__main__':
     o = Hangman(MAX_INCORRECT_GUESSES, word_to_show)
     o.populate_list_based_on_guesses(WORD_TO_GUESS)
-
