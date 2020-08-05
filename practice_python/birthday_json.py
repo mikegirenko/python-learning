@@ -13,6 +13,7 @@ class Birthdays:
     def read_file(self, file_name):
         with open(FILE_WITH_DATA, "r") as f:
             info = json.load(f)
+        f.close()
         return info
 
 
