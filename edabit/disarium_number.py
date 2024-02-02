@@ -3,7 +3,8 @@ A number is said to be Disarium if the sum of its digits raised to their respect
 Create a function that determines whether a number is a Disarium or not.
 """
 
-def is_disarium(number):
+
+def is_disarium(number) -> bool:
     disarium_number = False
     number_to_string = str(number)
     list_of_digits = []
