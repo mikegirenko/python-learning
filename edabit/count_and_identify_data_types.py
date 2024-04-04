@@ -5,7 +5,7 @@ Finally return the total in a list.
 
 
 def count_datatypes(*args) -> list:
-    totals_list = []  # [int, str, bool, list, tuple, dictionary]
+    totals_list = []
     int_count = 0
     str_count = 0
     bool_count = 0
@@ -37,28 +37,18 @@ def count_datatypes(*args) -> list:
 
 print(count_datatypes(1, 45, "Hi", False))
 print(count_datatypes([10, 20], ("t", "Ok"), 2, 3, 1))
-print(count_datatypes("Hello", "Bye", True, True, False, {"1": "One", "2": "Two"}, [1, 3], {"Brayan": 18}, 25, 23))
+print(
+    count_datatypes(
+        "Hello",
+        "Bye",
+        True,
+        True,
+        False,
+        {"1": "One", "2": "Two"},
+        [1, 3],
+        {"Brayan": 18},
+        25,
+        23,
+    )
+)
 print(count_datatypes(4, 21, ("ES", "EN"), ("a", "b"), False, [1, 2, 3], [4, 5, 6]))
-
-
-def count_datatypes_using_enumerate(*args) -> list:
-    totals_list = []
-    for count, thing in enumerate(args):
-        print(count)
-        print(thing)
-        totals_list.append(count)
-
-    return totals_list
-
-
-"""
->>> def print_everything(*args):
-    	for count, thing in enumerate(args):
-...     	print( '{0}. {1}'.format(count, thing))
-...
->>> print_everything('apple', 'banana', 'cabbage')
-0. apple
-1. banana
-2. cabbage
-"""
-print(count_datatypes_using_enumerate(1, 45, "Hi", False))
