@@ -3,13 +3,13 @@ Create a function that takes in n, a, b and returns the number of positive value
 the range [a, b], inclusive.
 """
 
+
 class PowerRanger:
 
     def power_ranger(self, n, a, b):
         number_of_positive_values = 0
-        raised = 0
         for i in range(1, b):
-            raised = i ** n
+            raised = i**n
             if a <= raised <= b:
                 number_of_positive_values += 1
 
