@@ -3,7 +3,7 @@ Create a function that flips a horizontal list into a vertical list, and a verti
 """
 
 
-def flip_list(list_to_flip):
+def flip_list(list_to_flip) -> list:
     flipped_list = []
 
     if len(list_to_flip) == 0:
