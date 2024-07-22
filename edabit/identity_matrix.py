@@ -3,6 +3,7 @@ Very Hard
 Create a function that takes an integer n and returns the identity matrix of n x n dimensions.
 """
 
+
 class IdentityMatrix:
     def id_mtrx(self, n) -> list:
         if type(n) != int:
@@ -30,7 +31,7 @@ class IdentityMatrix:
                     i = 0
                     while i < n:
                         if i == 0:
-                            identity_matrix[i][i-1] = "1"
+                            identity_matrix[i][i - 1] = "1"
                         if i == 1:
                             identity_matrix[i][i - 1] = "1"
                         if i == 2:
